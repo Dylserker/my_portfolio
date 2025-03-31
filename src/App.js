@@ -10,19 +10,15 @@ function App() {
             <main>
                 <section id="about">
                     <h2>À propos de moi</h2>
-                    {/* Contenu à venir */}
                 </section>
                 <section id="projects">
                     <h2>Mes Projets</h2>
-                    {/* Contenu à venir */}
                 </section>
                 <section id="skills">
                     <h2>Compétences</h2>
-                    {/* Contenu à venir */}
                 </section>
                 <section id="contact">
                     <h2>Contact</h2>
-                    {/* Contenu à venir */}
                 </section>
             </main>
         </div>
