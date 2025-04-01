@@ -13,18 +13,25 @@ import ThunderEffect from './components/Effect/ThunderEffect';
 
 function App() {
     const [glitchText, setGlitchText] = useState(false);
+    const [shakeEffect, setShakeEffect] = useState(false);
 
     useEffect(() => {
         const glitchInterval = setInterval(() => {
             setGlitchText(true);
-            setTimeout(() => setGlitchText(false), 200);
+            setTimeout(() => {
+                setGlitchText(false);
+                setShakeEffect(true);
+                setTimeout(() => {
+                    setShakeEffect(false);
+                }, 500);
+            }, 200);
         }, 5000);
 
         return () => clearInterval(glitchInterval);
     }, []);
 
     return (
-        <div className="App">
+        <div className={`App ${shakeEffect ? 'shake' : ''}`}>
             <ThunderEffect />
             <PixelEffect />
             <Header className={glitchText ? 'glitch' : ''} />
