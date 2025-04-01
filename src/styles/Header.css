@@ -26,9 +26,14 @@
     height: 280px;
     width: 280px;
     object-fit: contain;
+    image-rendering: optimizeQuality;
+    image-rendering: -webkit-crisp-edges;
+    image-rendering: crisp-edges;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    will-change: transform;
     animation: floatingGif 3s ease-in-out infinite;
 }
-
 .header {
     display: flex;
     justify-content: center;

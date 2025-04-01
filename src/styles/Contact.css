@@ -69,7 +69,13 @@
     height: 360px;
     width: 360px;
     object-fit: contain;
-    animation: floatingContactGif 3s ease-in-out infinite;
+    image-rendering: optimizeQuality;
+    image-rendering: -webkit-crisp-edges;
+    image-rendering: crisp-edges;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    will-change: transform;
+    animation: floatingSkillsGif 3s ease-in-out infinite;
     position: fixed;
 }
 
