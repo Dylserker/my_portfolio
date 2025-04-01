@@ -1,6 +1,6 @@
 .App-header {
     background: rgba(0, 0, 0, 0.8);
-    padding: 2rem;
+    padding: 3rem 2rem;
     text-align: center;
     border-bottom: 2px solid #39ff14;
 }
@@ -18,20 +18,21 @@
     align-items: center;
     justify-content: space-around;
     width: 100%;
-    padding: 0 2rem;
+    padding: 0 4rem;
 }
 
 .title-gif {
-    height: 120px;
-    width: 120px;
+    height: 140px;
+    width: 140px;
     object-fit: contain;
     animation: floatingGif 3s ease-in-out infinite;
 }
 
 .header-content {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
+    padding: 1rem 0;
 }
 
 @keyframes floatingGif {
