@@ -9,7 +9,7 @@ const Header = ({ className }) => {
             <div className="header-content">
                 <div className="title-container">
                     <img src={leftGif} alt="Gif gauche" className="title-gif" />
-                    <h1>Mon Portfolio</h1>
+                    <h1>Portfolio de Levant Dylan</h1>
                     <img src={rightGif} alt="Gif droite" className="title-gif" />
                 </div>
             </div>
