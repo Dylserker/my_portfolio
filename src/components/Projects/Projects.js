@@ -26,9 +26,9 @@ const Projects = () => {
     ];
 
     return (
-        <div className="projects-grid">
+        <div className="projects-grid electric-border">
             {projects.map(project => (
-                <div key={project.id} className="project-card">
+                <div key={project.id} className="project-card electric-border">
                     <div className="project-image">
                         <img src={project.image} alt={project.title} />
                     </div>

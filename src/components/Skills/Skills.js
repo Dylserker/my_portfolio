@@ -36,7 +36,7 @@ const Skills = () => {
         <div className="skills-container">
             <div className="skills-grid">
                 {skillCategories.map((category, index) => (
-                    <div key={index} className="skill-category">
+                    <div key={index} className="skill-category electric-border">
                         <h3>{category.title}</h3>
                         <div className="skill-list">
                             {category.skills.map((skill, skillIndex) => (
