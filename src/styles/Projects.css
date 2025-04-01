@@ -2,7 +2,8 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
-    padding: 1rem;
+    padding: 2rem;
+    margin: 0;
 }
 
 .project-card {
@@ -89,4 +90,9 @@
     height: 80%;
     max-width: 80%;
     object-fit: contain;
+}
+
+.projects-container {
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
