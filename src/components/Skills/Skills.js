@@ -1,4 +1,6 @@
 import React from 'react';
+import leftGif from '../../assets/gif/Sefia.gif';
+import rightGif from '../../assets/gif/Magress.gif';
 import '../../styles/Skills.css';
 
 const Skills = () => {
@@ -34,26 +36,30 @@ const Skills = () => {
 
     return (
         <div className="skills-container">
-            <div className="skills-grid">
-                {skillCategories.map((category, index) => (
-                    <div key={index} className="skill-category electric-border">
-                        <h3>{category.title}</h3>
-                        <div className="skill-list">
-                            {category.skills.map((skill, skillIndex) => (
-                                <div key={skillIndex} className="skill-item">
-                                    <div className="skill-name">{skill.name}</div>
-                                    <div className="skill-bar">
-                                        <div
-                                            className="skill-progress"
-                                            style={{ width: `${skill.level}%` }}
-                                        />
+            <img src={leftGif} alt="Sefia" className="skills-gif" />
+            <div className="skills-content">
+                <div className="skills-grid">
+                    {skillCategories.map((category, index) => (
+                        <div key={index} className="skill-category electric-border">
+                            <h3>{category.title}</h3>
+                            <div className="skill-list">
+                                {category.skills.map((skill, skillIndex) => (
+                                    <div key={skillIndex} className="skill-item">
+                                        <div className="skill-name">{skill.name}</div>
+                                        <div className="skill-bar">
+                                            <div
+                                                className="skill-progress"
+                                                style={{ width: `${skill.level}%` }}
+                                            />
+                                        </div>
                                     </div>
-                                </div>
-                            ))}
+                                ))}
+                            </div>
                         </div>
-                    </div>
-                ))}
+                    ))}
+                </div>
             </div>
+            <img src={rightGif} alt="Magress" className="skills-gif" />
         </div>
     );
 };

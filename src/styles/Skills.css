@@ -1,6 +1,36 @@
 .skills-container {
-    max-width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 2rem;
+    position: relative;
+}
+
+.skills-content {
+    flex: 1;
+    max-width: 600px;
     margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.skills-gif {
+    height: 120px;
+    width: 120px;
+    object-fit: contain;
+    animation: floatingSkillsGif 3s ease-in-out infinite;
+    position: absolute;
+}
+
+.skills-gif:first-child {
+    left: 20%;
+    transform: translateX(-50%);
+}
+
+.skills-gif:last-child {
+    right: 20%;
+    transform: translateX(50%);
 }
 
 .skills-grid {
@@ -55,4 +85,10 @@
 @keyframes glow-pulse {
     0%, 100% { opacity: 1; }
     50% { opacity: 0.7; }
+}
+
+@keyframes floatingSkillsGif {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
 }
