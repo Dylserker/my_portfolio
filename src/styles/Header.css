@@ -16,19 +16,34 @@
 .title-container {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 2rem;
     width: 100%;
-    padding: 0 4rem;
+    padding: 0 2rem;
 }
 
 .title-gif {
-    height: 140px;
-    width: 140px;
+    height: 280px;
+    width: 280px;
     object-fit: contain;
     animation: floatingGif 3s ease-in-out infinite;
 }
 
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 3rem 2rem;
+    border-bottom: 2px solid #39ff14;
+    margin-bottom: 80px;
+}
+
 .header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     max-width: 1400px;
     margin: 0 auto;

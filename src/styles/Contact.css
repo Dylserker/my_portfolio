@@ -3,6 +3,8 @@
     align-items: center;
     justify-content: center;
     width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 2rem;
     position: relative;
 }
@@ -64,11 +66,11 @@
 }
 
 .contact-gif {
-    height: 180px;
-    width: 180px;
+    height: 360px;
+    width: 360px;
     object-fit: contain;
     animation: floatingContactGif 3s ease-in-out infinite;
-    position: absolute;
+    position: fixed;
 }
 
 @keyframes floatingContactGif {
@@ -78,11 +80,9 @@
 }
 
 .contact-gif:first-child {
-    left: 25%;
-    transform: translateX(-50%);
+    left: calc(15% - 90px);
 }
 
 .contact-gif:last-child {
-    right: 25%;
-    transform: translateX(50%);
+    right: calc(15% - 90px);
 }
