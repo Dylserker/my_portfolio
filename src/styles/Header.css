@@ -12,3 +12,30 @@
     margin: 0;
     text-shadow: 0 0 10px rgba(57, 255, 20, 0.7);
 }
+
+.title-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    padding: 0 2rem;
+}
+
+.title-gif {
+    height: 120px;
+    width: 120px;
+    object-fit: contain;
+    animation: floatingGif 3s ease-in-out infinite;
+}
+
+.header-content {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@keyframes floatingGif {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
