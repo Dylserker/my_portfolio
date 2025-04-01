@@ -8,6 +8,7 @@ import Projects from './components/Projects/Projects';
 import Skills from './components/Skills/Skills';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
+import './styles/ElectricBorder.css';
 
 function App() {
     const [glitchText, setGlitchText] = useState(false);
@@ -26,19 +27,19 @@ function App() {
             <PixelEffect />
             <Header className={glitchText ? 'glitch' : ''} />
             <main>
-                <section id="about">
+                <section id="about" className="electric-border">
                     <h2>À propos de moi</h2>
                     <About profileImage={profileImage} />
                 </section>
-                <section id="projects">
+                <section id="projects" className="electric-border">
                     <h2>Mes Projets</h2>
                     <Projects />
                 </section>
-                <section id="skills">
+                <section id="skills" className="electric-border">
                     <h2>Compétences</h2>
                     <Skills />
                 </section>
-                <section id="contact">
+                <section id="contact" className="electric-border">
                     <h2>Contact</h2>
                     <Contact />
                 </section>
