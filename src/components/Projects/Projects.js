@@ -1,5 +1,6 @@
 import React from 'react';
 import '../../styles/Projects.css';
+import emblemeEC from '../../assets/images/Embleme_ec.png';
 
 const Projects = () => {
     const projects = [
@@ -17,7 +18,7 @@ const Projects = () => {
             title: "Exilium Carnage",
             description: "Application web pour un clan du jeux vidéo warframe permettant de gérer les membres et les événements.",
             tech: ["React", "Node.js", "MongoDB", "Typescript"],
-            image: "app-web.jpg",
+            image: emblemeEC,
             github: "https://github.com/Dylserker/Exilium_Carnage_Warframe",
             demo: "..."
         }
