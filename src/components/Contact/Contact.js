@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import leftGif from '../../assets/gif/Lance.gif';
+import rightGif from '../../assets/gif/Eze.gif';
 import '../../styles/Contact.css';
 
 const Contact = () => {
@@ -22,6 +24,7 @@ const Contact = () => {
 
     return (
         <div className="contact-container">
+            <img src={leftGif} alt="Lance" className="contact-gif" />
             <form className="contact-form" onSubmit={handleSubmit}>
                 <div className="form-group">
                     <input
@@ -54,6 +57,7 @@ const Contact = () => {
                 </div>
                 <button type="submit" className="submit-btn">Envoyer</button>
             </form>
+            <img src={rightGif} alt="Eze" className="contact-gif" />
         </div>
     );
 };
