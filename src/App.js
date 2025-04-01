@@ -10,6 +10,17 @@ function App() {
             <main>
                 <section id="about">
                     <h2>À propos de moi</h2>
+                    <div className="about-content">
+                        <img
+                            src="votre-photo.jpg"
+                            alt="Photo de profil"
+                            className="profile-image"
+                        />
+                        <div className="bio">
+                            <p>Développeur passionné spécialisé en React et JavaScript. Je crée des expériences web innovantes en combinant créativité et expertise technique.</p>
+                            <p>Actuellement à la recherche de nouveaux défis passionnants dans le développement web moderne.</p>
+                        </div>
+                    </div>
                 </section>
                 <section id="projects">
                     <h2>Mes Projets</h2>
