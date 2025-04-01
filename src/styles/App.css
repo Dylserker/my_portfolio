@@ -5,6 +5,9 @@
   background-color: #1a1a1a;
   color: #fff;
   font-family: 'Press Start 2P', cursive;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
 .App-header {
@@ -81,4 +84,19 @@ h2 {
   padding: 1rem;
   background: rgba(57, 255, 20, 0.05);
   border-left: 4px solid #39ff14;
+}
+
+main {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+#contact {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
 }
