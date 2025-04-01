@@ -1,6 +1,7 @@
 import React from 'react';
 import '../../styles/Projects.css';
 import emblemeEC from '../../assets/images/Embleme_ec.png';
+import reactIcon from '../../assets/images/React_Icon.png';
 
 const Projects = () => {
     const projects = [
@@ -9,7 +10,7 @@ const Projects = () => {
             title: "Portfolio React",
             description: "Portfolio personnel développé avec React et animations CSS avec un style jeux vidéo rétro.",
             tech: ["React", "CSS3", "JavaScript", "Node.js"],
-            image: "portfolio.jpg",
+            image: reactIcon,
             github: "https://github.com/Dylserker/my_portfolio",
             demo: "..."
         },
