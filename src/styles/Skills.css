@@ -16,8 +16,8 @@
 }
 
 .skills-gif {
-    height: 120px;
-    width: 120px;
+    height: 180px;
+    width: 180px;
     object-fit: contain;
     animation: floatingSkillsGif 3s ease-in-out infinite;
     position: absolute;
