@@ -1,0 +1,14 @@
+.App-header {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 2rem;
+    text-align: center;
+    border-bottom: 2px solid #39ff14;
+}
+
+.App-header h1 {
+    color: #39ff14;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2rem;
+    margin: 0;
+    text-shadow: 0 0 10px rgba(57, 255, 20, 0.7);
+}
