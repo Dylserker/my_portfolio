@@ -2,6 +2,7 @@ import React from 'react';
 import './styles/App.css';
 import profileImage from './assets/images/Photo_Levant_Dylan.jpg';
 import Projects from './components/Projects/Projects.js';
+import Skills from './components/Skills/Skills';
 
 function App() {
     return (
@@ -30,6 +31,7 @@ function App() {
                 </section>
                 <section id="skills">
                     <h2>Compétences</h2>
+                    <Skills />
                 </section>
                 <section id="contact">
                     <h2>Contact</h2>
