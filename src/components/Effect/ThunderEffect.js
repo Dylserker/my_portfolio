@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/ThunderEffect.css';
+import '../../styles/ThunderEffect.css';
 
 const ThunderEffect = () => {
     return (

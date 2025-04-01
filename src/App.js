@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import PixelEffect from './components/PixelEffect';
+import PixelEffect from './components/Effect/PixelEffect';
 import './styles/App.css';
 import Header from './components/Header/Header';
 import profileImage from './assets/images/Photo_Levant_Dylan.jpg';
@@ -9,7 +9,7 @@ import Skills from './components/Skills/Skills';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import './styles/ElectricBorder.css';
-import ThunderEffect from './components/ThunderEffect';
+import ThunderEffect from './components/Effect/ThunderEffect';
 
 function App() {
     const [glitchText, setGlitchText] = useState(false);
