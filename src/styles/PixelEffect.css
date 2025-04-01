@@ -1,0 +1,32 @@
+.pixel-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.pixel {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: #39ff14;
+    animation: pixelFloat 3s linear infinite;
+    opacity: 0;
+}
+
+@keyframes pixelFloat {
+    0% {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+}

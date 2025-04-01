@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import PixelEffect from './components/PixelEffect';
 import './styles/App.css';
 import Header from './components/Header/Header';
 import profileImage from './assets/images/Photo_Levant_Dylan.jpg';
@@ -9,9 +10,21 @@ import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 
 function App() {
+    const [glitchText, setGlitchText] = useState(false);
+
+    useEffect(() => {
+        const glitchInterval = setInterval(() => {
+            setGlitchText(true);
+            setTimeout(() => setGlitchText(false), 200);
+        }, 5000);
+
+        return () => clearInterval(glitchInterval);
+    }, []);
+
     return (
         <div className="App">
-            <Header />
+            <PixelEffect />
+            <Header className={glitchText ? 'glitch' : ''} />
             <main>
                 <section id="about">
                     <h2>À propos de moi</h2>
