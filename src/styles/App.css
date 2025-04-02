@@ -1,5 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
+:root {
+  --primary-color: #39ff14;
+  --secondary-color: #ff00ff;
+  --accent-color: #00ffff;
+  --background-color: #1a1a1a;
+  --dark-overlay: rgba(0, 0, 0, 0.7);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+
 .App {
   text-align: center;
   background-color: #1a1a1a;
@@ -260,9 +280,12 @@ section:hover {
     line-height: 1.4;
   }
 
+  .about-content {
+    flex-direction: column;
+  }
+
   .projects-container {
     grid-template-columns: 1fr;
-    gap: 1rem;
   }
 
   section:hover {
@@ -278,5 +301,21 @@ section:hover {
 
   .container {
     padding: 0 0.5rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .App-header {
+    min-height: 20vh;
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 1rem;
+  }
+
+  section {
+    padding: 0.75rem;
+    width: 98%;
   }
 }

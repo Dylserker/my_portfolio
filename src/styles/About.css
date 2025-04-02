@@ -31,3 +31,20 @@
     background: rgba(57, 255, 20, 0.05);
     border-left: 4px solid #39ff14;
 }
+
+@media screen and (max-width: 768px) {
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .profile-image {
+        margin: 0 auto;
+    }
+
+    .bio {
+        border-left: none;
+        border-top: 4px solid #39ff14;
+    }
+}

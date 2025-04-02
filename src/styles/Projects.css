@@ -139,3 +139,45 @@
 .projects-gif:last-child {
     right: calc(10% - 90px);
 }
+
+@media screen and (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1.5rem;
+        padding: 1.5rem 1rem;
+    }
+
+    .project-image {
+        height: 160px;
+    }
+
+    .tech-stack {
+        gap: 0.3rem;
+    }
+
+    .tech-tag {
+        padding: 0.2rem 0.5rem;
+        font-size: 0.7em;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .projects-gif {
+        display: block;
+        position: fixed;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .project-links {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+

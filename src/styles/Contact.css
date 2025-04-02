@@ -121,3 +121,40 @@
 .contact-gif:last-child {
     right: calc(15% - 90px);
 }
+
+@media screen and (max-width: 768px) {
+    .contact-form {
+        padding: 1.5rem 1rem;
+    }
+
+    .submit-btn {
+        width: 75%;
+        padding: 0.8rem 1.5rem;
+        font-size: 0.8rem;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 0.8rem;
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .contact-gif {
+        display: block;
+        position: fixed;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contact-form {
+        padding: 1rem;
+    }
+
+    .submit-btn {
+        width: 100%;
+        padding: 0.7rem 1rem;
+        font-size: 0.7rem;
+    }
+}
