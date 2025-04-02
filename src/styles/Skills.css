@@ -48,11 +48,11 @@
 }
 
 .skills-gif:first-child {
-    left: calc(15% - 90px);
+    left: calc(10% - 90px);
 }
 
 .skills-gif:last-child {
-    right: calc(15% - 90px);
+    right: calc(10% - 90px);
 }
 
 .skills-grid {
