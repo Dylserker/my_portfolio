@@ -3,7 +3,7 @@ import '../../styles/About.css';
 
 const About = ({ profileImage }) => {
     return (
-        <div className="about-container">
+        <div className="about-container electric-border">
             <div className="about-content">
                 <img
                     src={profileImage}
