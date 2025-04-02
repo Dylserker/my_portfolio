@@ -179,42 +179,104 @@ section:hover {
 }
 
 @media screen and (max-width: 768px) {
+  /* Tablettes */
+  .App-header {
+    min-height: 35vh;
+  }
+
   h1 {
-    font-size: 2em;
+    font-size: 1.8rem;
+    word-wrap: break-word;
+  }
+
+  h2 {
+    font-size: 1.4rem;
   }
 
   section {
     padding: 1.5rem;
-    margin: 1.5rem 0;
+    margin: 1.5rem auto;
+    width: 90%;
   }
 
   .about-content {
-    grid-template-columns: 1fr;
-    gap: 1rem;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 
   .profile-image {
-    width: 150px;
-    height: 150px;
-    margin: 0 auto;
+    width: 120px;
+    height: 120px;
+    margin: 0 1rem 0 0;
+    flex-shrink: 0;
+  }
+
+  .bio {
+    flex: 1;
+  }
+
+  .projects-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  * {
+    max-width: 100%;
   }
 }
 
 @media screen and (max-width: 480px) {
+  html, body {
+    overflow-x: hidden;
+  }
+
+  .App-header {
+    min-height: 25vh;
+  }
+
   h1 {
-    font-size: 1.5em;
+    font-size: 1.2rem;
+  }
+
+  h2 {
+    font-size: 1.1rem;
   }
 
   section {
     padding: 1rem;
-    margin: 1rem 0;
+    margin: 1rem auto;
+    width: 95%;
   }
 
-  .App-header {
-    min-height: 30vh;
+  .profile-image {
+    width: 90px;
+    height: 90px;
+    margin: 0 0.8rem 0 0;
   }
 
-  h2 {
-    font-size: 1.2rem;
+  .bio {
+    padding: 0.8rem;
+    font-size: 0.7rem;
+    line-height: 1.4;
+  }
+
+  .projects-container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  section:hover {
+    transform: none;
+  }
+
+  * {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .container {
+    padding: 0 0.5rem;
   }
 }
