@@ -9,13 +9,11 @@ import Skills from './components/Skills/Skills';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import './styles/ElectricBorder.css';
-import ThunderEffect from './components/Effect/ThunderEffect';
 
 function App() {
 
     return (
         <div className="App">
-            <ThunderEffect />
             <PixelEffect />
             <Header/>
             <main>
