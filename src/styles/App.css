@@ -8,6 +8,7 @@
   min-height: 100vh;
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 
 .App-header {
@@ -58,10 +59,25 @@ h2 {
 }
 
 .about-content {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
+  display: flex;
+  flex-wrap: wrap;
   gap: 2rem;
   align-items: center;
+  justify-content: center;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
 }
 
 .profile-image {
@@ -76,6 +92,11 @@ h2 {
   backface-visibility: hidden;
   transform: translateZ(0);
   filter: contrast(1.05) brightness(1.05);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .bio {
@@ -155,4 +176,45 @@ section:hover {
   max-width: 100%;
   box-sizing: border-box;
   overflow-x: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  section {
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+  }
+
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .profile-image {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 1.5em;
+  }
+
+  section {
+    padding: 1rem;
+    margin: 1rem 0;
+  }
+
+  .App-header {
+    min-height: 30vh;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
 }
