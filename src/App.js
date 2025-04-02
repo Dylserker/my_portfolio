@@ -12,29 +12,12 @@ import './styles/ElectricBorder.css';
 import ThunderEffect from './components/Effect/ThunderEffect';
 
 function App() {
-    const [glitchText, setGlitchText] = useState(false);
-    const [shakeEffect, setShakeEffect] = useState(false);
-
-    useEffect(() => {
-        const glitchInterval = setInterval(() => {
-            setGlitchText(true);
-            setTimeout(() => {
-                setGlitchText(false);
-                setShakeEffect(true);
-                setTimeout(() => {
-                    setShakeEffect(false);
-                }, 500);
-            }, 200);
-        }, 5000);
-
-        return () => clearInterval(glitchInterval);
-    }, []);
 
     return (
-        <div className={`App ${shakeEffect ? 'shake' : ''}`}>
+        <div className="App">
             <ThunderEffect />
             <PixelEffect />
-            <Header className={glitchText ? 'glitch' : ''} />
+            <Header/>
             <main>
                 <section id="about" className="electric-border">
                     <h2>À propos de moi</h2>
