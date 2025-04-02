@@ -25,7 +25,7 @@ const Contact = () => {
     return (
         <div className="contact-container">
             <img src={leftGif} alt="Lance" className="contact-gif" />
-            <form className="contact-form" onSubmit={handleSubmit}>
+            <form className="contact-form electric-border" onSubmit={handleSubmit}>
                 <div className="form-group">
                     <input
                         type="text"
