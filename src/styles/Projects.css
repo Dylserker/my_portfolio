@@ -117,3 +117,25 @@
     margin-bottom: 0;
     padding-bottom: 0;
 }
+
+.projects-gif {
+    height: 360px;
+    width: 360px;
+    object-fit: contain;
+    image-rendering: optimizeQuality;
+    image-rendering: -webkit-crisp-edges;
+    image-rendering: crisp-edges;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    will-change: transform;
+    animation: floatingSkillsGif 3s ease-in-out infinite;
+    position: fixed;
+}
+
+.projects-gif:first-child {
+    left: calc(10% - 90px);
+}
+
+.projects-gif:last-child {
+    right: calc(10% - 90px);
+}
