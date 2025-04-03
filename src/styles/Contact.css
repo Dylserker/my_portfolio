@@ -27,7 +27,6 @@
 
 .contact-form {
     position: relative;
-    z-index: 1;
     width: 90%;
     max-width: 600px;
     margin: 0 auto;
@@ -140,6 +139,7 @@
     will-change: transform;
     animation: floatingContactGif 3s ease-in-out infinite;
     position: fixed;
+    z-index: 1;
 }
 
 @keyframes floatingContactGif {
