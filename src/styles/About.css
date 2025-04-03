@@ -15,6 +15,63 @@
     align-items: center;
 }
 
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.about-gif {
+    height: 360px;
+    width: 360px;
+    object-fit: contain;
+    image-rendering: optimizeQuality;
+    image-rendering: -webkit-crisp-edges;
+    image-rendering: crisp-edges;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    will-change: transform;
+    animation: floatingAboutGif 3s ease-in-out infinite;
+    position: absolute;
+}
+
+.about-gif:first-child {
+    left: -420px;
+}
+
+.about-gif:last-child {
+    right: -420px;
+}
+
+@keyframes floatingAboutGif {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+@media screen and (max-width: 1024px) {
+    .about-gif {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about-section {
+        flex-direction: column;
+    }
+
+    .about-gif {
+        height: 100px;
+        margin: 10px 0;
+    }
+}
+
+
+
 .profile-image {
     width: 200px;
     height: 200px;
@@ -36,6 +93,43 @@
     background: rgba(57, 255, 20, 0.05);
     border-left: 4px solid #39ff14;
 }
+
+@media screen and (max-width: 1600px) {
+    .about-gif {
+        width: 300px;
+        height: 300px;
+    }
+
+    .about-gif:first-child {
+        left: -350px;
+    }
+
+    .about-gif:last-child {
+        right: -350px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .about-gif {
+        width: 250px;
+        height: 250px;
+    }
+
+    .about-gif:first-child {
+        left: -300px;
+    }
+
+    .about-gif:last-child {
+        right: -300px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .about-gif {
+        display: none;
+    }
+}
+
 
 @media screen and (max-width: 768px) {
     .about-content {
