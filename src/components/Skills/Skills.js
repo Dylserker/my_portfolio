@@ -46,11 +46,14 @@ const Skills = () => {
                                 {category.skills.map((skill, skillIndex) => (
                                     <div key={skillIndex} className="skill-item">
                                         <div className="skill-name">{skill.name}</div>
-                                        <div className="skill-bar">
-                                            <div
-                                                className="skill-progress"
-                                                style={{ width: `${skill.level}%` }}
-                                            />
+                                        <div className="skill-bar-container">
+                                            <div className="skill-bar">
+                                                <div
+                                                    className="skill-progress"
+                                                    style={{ width: `${skill.level}%` }}
+                                                />
+                                            </div>
+                                            <div className="skill-level">Lv {skill.level}</div>
                                         </div>
                                     </div>
                                 ))}

@@ -96,7 +96,22 @@
     border: 1px solid #39ff14;
     border-radius: 6px;
     overflow: hidden;
+    flex-grow: 1;
+    margin-right: 10px;
 }
+
+.skill-bar-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.skill-level {
+    font-size: 0.8em;
+    white-space: nowrap;
+    color: #fff;
+}
+
 
 .skill-progress {
     height: 100%;
