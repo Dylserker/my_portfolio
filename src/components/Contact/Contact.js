@@ -19,10 +19,10 @@ const Contact = () => {
         setIsSubmitting(true);
 
         emailjs.send(
-            'YOUR_SERVICE_ID',
-            'YOUR_TEMPLATE_ID',
+            'service_8ihlzfs',
+            'template_fyoqchp',
             formData,
-            'YOUR_USER_ID'
+            '_Mz0Df-MlYz-Xe8vV'
         )
             .then((response) => {
                 console.log('Succès!', response.status, response.text);
