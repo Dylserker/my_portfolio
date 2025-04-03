@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import emailjs from 'emailjs-com';
 import leftGif from '../../assets/gif/Lance.gif';
 import rightGif from '../../assets/gif/Eze.gif';
 import '../../styles/Contact.css';
@@ -17,23 +18,19 @@ const Contact = () => {
         e.preventDefault();
         setIsSubmitting(true);
 
-        fetch('https://formspree.io/f/votre_id_formspree', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(formData),
-        })
-            .then(response => {
-                if (response.ok) {
-                    setSubmitStatus('success');
-                    setFormData({ name: '', email: '', message: '' });
-                } else {
-                    setSubmitStatus('error');
-                }
+        emailjs.send(
+            'YOUR_SERVICE_ID',
+            'YOUR_TEMPLATE_ID',
+            formData,
+            'YOUR_USER_ID'
+        )
+            .then((response) => {
+                console.log('Succès!', response.status, response.text);
+                setSubmitStatus('success');
+                setFormData({ name: '', email: '', message: '' });
             })
-            .catch(error => {
-                console.error('Erreur:', error);
+            .catch((err) => {
+                console.error('Erreur:', err);
                 setSubmitStatus('error');
             })
             .finally(() => {
