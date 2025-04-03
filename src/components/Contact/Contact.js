@@ -10,9 +10,35 @@ const Contact = () => {
         message: ''
     });
 
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [submitStatus, setSubmitStatus] = useState(null);
+
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log('Formulaire soumis:', formData);
+        setIsSubmitting(true);
+
+        fetch('https://formspree.io/f/votre_id_formspree', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(formData),
+        })
+            .then(response => {
+                if (response.ok) {
+                    setSubmitStatus('success');
+                    setFormData({ name: '', email: '', message: '' });
+                } else {
+                    setSubmitStatus('error');
+                }
+            })
+            .catch(error => {
+                console.error('Erreur:', error);
+                setSubmitStatus('error');
+            })
+            .finally(() => {
+                setIsSubmitting(false);
+            });
     };
 
     const handleChange = (e) => {
@@ -26,6 +52,18 @@ const Contact = () => {
         <div className="contact-container">
             <img src={leftGif} alt="Lance" className="contact-gif" />
             <form className="contact-form electric-border" onSubmit={handleSubmit}>
+                {submitStatus === 'success' && (
+                    <div className="success-message">
+                        Votre message a été envoyé avec succès !
+                    </div>
+                )}
+
+                {submitStatus === 'error' && (
+                    <div className="error-message">
+                        Une erreur est survenue. Veuillez réessayer.
+                    </div>
+                )}
+
                 <div className="form-group">
                     <input
                         type="text"
@@ -55,7 +93,13 @@ const Contact = () => {
                         required
                     />
                 </div>
-                <button type="submit" className="submit-btn">Envoyer</button>
+                <button
+                    type="submit"
+                    className="submit-btn"
+                    disabled={isSubmitting}
+                >
+                    {isSubmitting ? 'Envoi en cours...' : 'Envoyer'}
+                </button>
             </form>
             <img src={rightGif} alt="Eze" className="contact-gif" />
         </div>
