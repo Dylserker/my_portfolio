@@ -6,7 +6,7 @@ import rightGif from '../../assets/gif/Miku.gif';
 const About = ({ profileImage }) => {
     return (
         <div className="about-section">
-            <img src={leftGif} alt="Gif décoratif gauche" className="about-gif left-gif" />
+            <img src={leftGif} alt="Scarlet" className="about-gif" />
             <div className="about-container electric-border">
                 <div className="about-content">
                     <img
@@ -20,7 +20,7 @@ const About = ({ profileImage }) => {
                     </div>
                 </div>
             </div>
-            <img src={rightGif} alt="Gif décoratif droite" className="about-gif right-gif" />
+            <img src={rightGif} alt="Miku" className="about-gif" />
         </div>
     );
 };
