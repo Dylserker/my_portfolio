@@ -8,6 +8,7 @@ Un portfolio personnel interactif développé avec React, mettant en valeur mes 
 - JavaScript (ES6+)
 - CSS3
 - HTML5
+-Emaijs
 
 ## ✨ Fonctionnalités
 
