@@ -133,11 +133,11 @@
 }
 
 .projects-gif:first-child {
-    left: calc(10% - 90px);
+    left: calc(5% - 90px);
 }
 
 .projects-gif:last-child {
-    right: calc(10% - 90px);
+    right: calc(5% - 90px);
 }
 
 @media screen and (max-width: 768px) {
