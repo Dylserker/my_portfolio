@@ -40,11 +40,11 @@
 }
 
 .about-gif:first-child {
-    left: -420px;
+    left: calc(-15% - 90px);
 }
 
 .about-gif:last-child {
-    right: -420px;
+    right: calc(-15% - 90px);
 }
 
 @keyframes floatingAboutGif {
