@@ -192,6 +192,11 @@ section:hover {
   overflow-x: hidden;
 }
 
+[class*="-gif"] {
+  display: none !important;
+}
+
+
 @media screen and (max-width: 768px) {
   .App-header {
     min-height: 35vh;
