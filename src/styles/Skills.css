@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    max-width: 1200px;
+    max-width: 95vw;
     margin: 0 auto;
     padding: 2rem;
     position: relative;
@@ -26,7 +26,8 @@
 
 .skills-content {
     flex: 1;
-    max-width: 800px;
+    max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
     padding: 2rem;
     position: relative;
@@ -143,9 +144,8 @@
 }
 
 @media screen and (min-width: 1024px) {
-    .skills-gif {
-        display: block;
-        position: fixed;
+    .skills-grid {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 

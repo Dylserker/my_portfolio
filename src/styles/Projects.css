@@ -1,27 +1,72 @@
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
+.projects-carousel {
     position: relative;
-    background-image: url('../assets/images/Dimension.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: 1;
+    width: 100%;
+    max-width: 95vw;
+    margin: 0 auto;
+    padding: 3rem 0 2rem; /* espace en haut pour les boutons */
+}
 
-    &::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: rgba(0, 0, 0, 0.2);
-        z-index: -1;
+.projects-track {
+    display: flex;
+    gap: 2rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 0 3rem; /* pour laisser la place aux boutons */
+    scroll-snap-type: x mandatory;
+}
+
+.projects-track::-webkit-scrollbar {
+    height: 8px;
+}
+.projects-track::-webkit-scrollbar-thumb {
+    background: rgba(255, 0, 255, 0.4);
+    border-radius: 4px;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%; /* centrer verticalement */
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: #39ff14;
+    border: 1px solid #39ff14;
+    border-radius: 4px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 10;
+    backdrop-filter: blur(2px);
+}
+.carousel-btn.prev { left: 0; }
+.carousel-btn.next { right: 0; }
+
+/* Cartes de taille uniforme et 3 par vue */
+.projects-track .project-card {
+    flex: 0 0 calc((100% - 4rem) / 3); /* 3 cartes avec 2 gaps de 2rem */
+    display: flex;
+    flex-direction: column;
+    scroll-snap-align: start;
+}
+
+.projects-track .project-image {
+    height: 200px;
+}
+
+.projects-track .project-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 1024px) {
+    .projects-track .project-card {
+        flex: 0 0 calc((100% - 2rem) / 2); /* 2 par vue */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .projects-track .project-card {
+        flex: 0 0 100%; /* 1 par vue */
     }
 }
 
