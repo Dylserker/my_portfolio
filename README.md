@@ -1,48 +1,68 @@
-# Portfolio de Levant Dylan
+# Mon Portfolio — React + TypeScript
 
-Un portfolio personnel interactif développé avec React, mettant en valeur mes projets et compétences avec un design cyberpunk unique.
+Un portfolio personnel interactif développé avec React et TypeScript, mettant en valeur mes projets et compétences avec un design cyberpunk.
 
 ## 🚀 Technologies Utilisées
 
-- React.js
-- JavaScript (ES6+)
-- CSS3
-- HTML5
--Emaijs
+- React
+- TypeScript
+- CSS3 / HTML5
+- EmailJS
 
 ## ✨ Fonctionnalités
 
-- Design cyberpunk avec effets visuels dynamiques
+- Design cyberpunk avec effets visuels
 - Animations pixel art et effets de glitch
-- Sections responsives pour :
-    - À propos
-    - Projets
-    - Compétences
-    - Contact
+- Sections responsives : À propos, Projets, Compétences, Contact
 
-## 🛠 Installation
+## 🛠 Installation & Démarrage
 
 ```bash
-# Cloner le repository
-git clone https://github.com/[votre-username]/portfolio
-
-# Installer les dépendances
-cd portfolio
 npm install
-
-# Lancer le serveur de développement
 npm start
+```
+Le serveur démarre sur `http://localhost:3000`.
 
+## 🔍 Vérification de types
+
+```bash
+npm run type-check
+```
+
+## 🏗 Build de production
+
+```bash
+npm run build
+```
+Le dossier `build/` est prêt à être déployé.
+
+### Aperçu local du build
+```bash
+npm install -g serve
+serve -s build
+```
+
+## 📂 Structure
+
+```
 src/
-├── assets/
-│   ├── gif/
-│   └── images/
-├── components/
-│   ├── About/
-│   ├── Contact/
-│   ├── Effect/
-│   ├── Footer/
-│   ├── Header/
-│   ├── Projects/
-│   └── Skills/
-└── styles/
+  App.tsx
+  index.tsx
+  reportWebVitals.ts
+  components/
+    About/ About.tsx
+    Contact/ Contact.tsx
+    Effect/ PixelEffect.tsx, ThunderEffect.tsx
+    Footer/ Footer.tsx
+    Header/ Header.tsx
+    Projects/ Projects.tsx
+    Skills/ Skills.tsx
+  styles/ *.css
+  types/
+    global.d.ts
+  react-app-env.d.ts
+```
+
+## 🚀 Déploiement
+
+- Déploiement statique (GitHub Pages, Vercel, Netlify…) en servant `build/`.

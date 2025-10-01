@@ -15,7 +15,7 @@ const About: React.FC<AboutProps> = ({ profileImage }) => {
                 <div className="about-content">
                     <img
                         src={profileImage}
-                        alt="Photo de profil"
+                        alt="Portrait de Dylan Levant"
                         className="profile-image"
                     />
                     <div className="bio">

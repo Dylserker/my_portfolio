@@ -51,7 +51,7 @@ h1 {
 }
 
 #skills, #contact, #projects, #about {
-  max-width: 1200px;
+  max-width: 95vw;
   margin-left: auto;
   margin-right: auto;
 }
