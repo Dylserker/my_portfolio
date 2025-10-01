@@ -10,7 +10,7 @@ import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import './styles/ElectricBorder.css';
 
-function App(): JSX.Element {
+function App() {
     return (
         <div className="App">
             <PixelEffect />
