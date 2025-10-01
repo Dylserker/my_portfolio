@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../styles/Header.css';
-import logo from '../../assets/images/Dylserker_Logo.png';
+import logo from '../../assets/images/Dylserker_Logo.webp';
 
 type HeaderProps = {
     className?: string;
