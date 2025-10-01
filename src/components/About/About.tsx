@@ -17,7 +17,7 @@ const About: React.FC<AboutProps> = ({ profileImage }) => {
                     />
                     <div className="bio">
                         <p>Développeur passionné en React et JavaScript. Je crée des expériences web innovantes en combinant créativité et expertise technique.</p>
-                        <p>Actuellement à la recherche d'une alternance et de nouveaux défis pour progresser.</p>
+                        <p>Actuellement en alternance chez LSDH en tant que développeur fonctionnel. J'apprend le WinDev et l'Angular</p>
                     </div>
                 </div>
             </div>
