@@ -10,7 +10,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    border: 2px solid #8a2be2;
+    border: 2px solid #b60707;
     pointer-events: none;
     animation: electricBorder 1.5s linear infinite;
 }
