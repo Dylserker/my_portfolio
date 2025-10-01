@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../styles/Header.css';
-import logo from '../../assets/images/React_Icon.png';
+import logo from '../../assets/images/Dylserker_Logo.png';
 
 type HeaderProps = {
     className?: string;
@@ -11,8 +11,8 @@ const Header: React.FC<HeaderProps> = ({ className = '' }) => {
         <header className={`header ${className}`}>
             <div className="header-content">
                 <div className="title-container">
+                <img src={logo} alt="Logo" className="logo" />
                     <nav className="nav">
-                        <img src={logo} alt="Logo" className="logo" />
                         <ul className="nav-links">
                             <li><a href="#about">About</a></li>
                             <li><a href="#projects">Projects</a></li>
