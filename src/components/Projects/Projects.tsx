@@ -1,6 +1,5 @@
 import React, { useRef } from 'react';
 import '../../styles/Projects.css';
-import emblemeEC from '../../assets/images/Embleme_ec.png';
 import reactIcon from '../../assets/images/React_Icon.png';
 
 type Project = {
@@ -26,12 +25,12 @@ const Projects: React.FC = () => {
         },
         {
             id: 2,
-            title: 'Exilium Carnage',
-            description: "Application web pour un clan du jeux vidéo warframe permettant de gérer les membres et les événements.",
-            tech: ['React', 'Node.js', 'MongoDB', 'Typescript'],
-            image: emblemeEC,
-            github: 'https://github.com/Dylserker/Exilium_Carnage_Warframe',
-            demo: '...'
+            title: 'Vitrine_Carole',
+            description: "Site en ligne pour une assistante maternelle agréer sur Riom.",
+            tech: ['React', 'Node.js'],
+            image: reactIcon,
+            github: 'https://github.com/Dylserker/Vitrine_Carole',
+            demo: 'https://carole-levant.vercel.app/'
         },
         {
             id: 3,
@@ -81,7 +80,10 @@ const Projects: React.FC = () => {
             </button>
             <div className="projects-track" ref={trackRef}>
                 {projects.map((project) => (
-                    <div key={project.id} className="project-card electric-border">
+                    <div
+                        key={project.id}
+                        className="project-card electric-border"
+                    >
                         <div className="project-image">
                             <img src={project.image} alt={project.title} />
                         </div>
@@ -95,7 +97,15 @@ const Projects: React.FC = () => {
                             </div>
                             <div className="project-links">
                                 <a href={project.github} target="_blank" rel="noopener noreferrer">GitHub</a>
-                                <a href={project.demo} target="_blank" rel="noopener noreferrer">Démo</a>
+                                {project.demo && project.demo !== '...'
+                                    ? (
+                                        <a href={project.demo} target="_blank" rel="noopener noreferrer">Démo</a>
+                                      )
+                                    : (
+                                        <span className="link-disabled" aria-disabled="true" title="Démo indisponible">
+                                            Démo
+                                        </span>
+                                      )}
                             </div>
                         </div>
                     </div>
