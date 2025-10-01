@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
-import leftGif from '../../assets/gif/Lance.gif';
-import rightGif from '../../assets/gif/Eze.gif';
 import '../../styles/Contact.css';
 
 type FormData = {
@@ -45,7 +43,6 @@ const Contact: React.FC = () => {
 
     return (
         <div className="contact-container">
-            <img src={leftGif} alt="Lance" className="contact-gif" />
             <form className="contact-form electric-border" onSubmit={handleSubmit}>
                 {submitStatus === 'success' && (
                     <div className="success-message">Votre message a été envoyé avec succès !</div>
@@ -88,7 +85,6 @@ const Contact: React.FC = () => {
                     {isSubmitting ? 'Envoi en cours...' : 'Envoyer'}
                 </button>
             </form>
-            <img src={rightGif} alt="Eze" className="contact-gif" />
         </div>
     );
 };

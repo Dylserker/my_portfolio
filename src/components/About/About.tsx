@@ -1,7 +1,5 @@
 import React from 'react';
 import '../../styles/About.css';
-import leftGif from '../../assets/gif/Scarlet.gif';
-import rightGif from '../../assets/gif/Miku.gif';
 
 type AboutProps = {
     profileImage: string;
@@ -10,7 +8,6 @@ type AboutProps = {
 const About: React.FC<AboutProps> = ({ profileImage }) => {
     return (
         <div className="about-section">
-            <img src={leftGif} alt="Scarlet" className="about-gif" />
             <div className="about-container electric-border">
                 <div className="about-content">
                     <img
@@ -24,7 +21,6 @@ const About: React.FC<AboutProps> = ({ profileImage }) => {
                     </div>
                 </div>
             </div>
-            <img src={rightGif} alt="Miku" className="about-gif" />
         </div>
     );
 };

@@ -2,8 +2,6 @@ import React from 'react';
 import '../../styles/Projects.css';
 import emblemeEC from '../../assets/images/Embleme_ec.png';
 import reactIcon from '../../assets/images/React_Icon.png';
-import leftGif from '../../assets/gif/Dilma.gif';
-import rightGif from '../../assets/gif/Atro.gif';
 
 type Project = {
     id: number;
@@ -39,7 +37,6 @@ const Projects: React.FC = () => {
 
     return (
         <div className="projects-grid">
-            <img src={leftGif} alt="Dilma" className="projects-gif" />
             {projects.map((project) => (
                 <div key={project.id} className="project-card electric-border">
                     <div className="project-image">
@@ -60,7 +57,6 @@ const Projects: React.FC = () => {
                     </div>
                 </div>
             ))}
-            <img src={rightGif} alt="Atro" className="projects-gif" />
         </div>
     );
 };

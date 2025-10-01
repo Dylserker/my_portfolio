@@ -1,7 +1,5 @@
 import React from 'react';
 import '../../styles/Header.css';
-import leftGif from '../../assets/gif/Selena.gif';
-import rightGif from '../../assets/gif/Vargas.gif';
 import logo from '../../assets/images/React_Icon.png';
 
 type HeaderProps = {
@@ -13,7 +11,6 @@ const Header: React.FC<HeaderProps> = ({ className = '' }) => {
         <header className={`header ${className}`}>
             <div className="header-content">
                 <div className="title-container">
-                    <img src={leftGif} alt="Gif gauche" className="title-gif" />
                     <nav className="nav">
                         <img src={logo} alt="Logo" className="logo" />
                         <ul className="nav-links">
@@ -23,7 +20,6 @@ const Header: React.FC<HeaderProps> = ({ className = '' }) => {
                             <li><a href="#contact">Contact</a></li>
                         </ul>
                     </nav>
-                    <img src={rightGif} alt="Gif droite" className="title-gif" />
                 </div>
             </div>
         </header>

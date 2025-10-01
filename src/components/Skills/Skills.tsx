@@ -1,6 +1,4 @@
 import React from 'react';
-import leftGif from '../../assets/gif/Sefia.gif';
-import rightGif from '../../assets/gif/Magress.gif';
 import '../../styles/Skills.css';
 
 type Skill = { name: string; level: number };
@@ -39,7 +37,6 @@ const Skills: React.FC = () => {
 
     return (
         <div className="skills-container">
-            <img src={leftGif} alt="Sefia" className="skills-gif" />
             <div className="skills-content">
                 <div className="skills-grid">
                     {skillCategories.map((category, index) => (
@@ -65,7 +62,6 @@ const Skills: React.FC = () => {
                     ))}
                 </div>
             </div>
-            <img src={rightGif} alt="Magress" className="skills-gif" />
         </div>
     );
 };
