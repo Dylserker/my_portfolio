@@ -1,7 +1,7 @@
 .footer {
     background: rgba(0, 0, 0, 0.8);
     padding: 2rem;
-    border-top: 2px solid #39ff14;
+    border-top: 2px solid #ff0000;
     margin-top: 3rem;
 }
 
@@ -11,7 +11,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #39ff14;
+    color: #ff0000;
     font-family: 'Press Start 2P', cursive;
     font-size: 0.8rem;
 }
@@ -22,14 +22,14 @@
 }
 
 .social-links a {
-    color: #39ff14;
+    color: #ff0000;
     text-decoration: none;
     transition: all 0.3s ease;
 }
 
 .social-links a:hover {
-    color: #00ffff;
-    text-shadow: 0 0 10px rgba(0, 255, 255, 0.7);
+    color: #ff9100;
+    text-shadow: 0 0 10px rgba(255, 230, 0, 0.7);
 }
 
 @media screen and (max-width: 768px) {
