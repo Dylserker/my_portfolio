@@ -51,13 +51,13 @@
 
 .skill-category {
     background: rgba(0, 0, 0, 0.8);
-    border: 2px solid #ff00ff;
+    border: 2px solid #ff0000;
     border-radius: 8px;
     padding: 1.5rem;
 }
 
 .skill-category h3 {
-    color: #39ff14;
+    color: #ff0000;
     margin-bottom: 1rem;
     text-align: center;
 }
@@ -73,14 +73,14 @@
 }
 
 .skill-name {
-    color: #00ffff;
+    color: #ff9900;
     margin-bottom: 0.5rem;
 }
 
 .skill-bar {
     height: 12px;
     background: rgba(57, 255, 20, 0.1);
-    border: 1px solid #39ff14;
+    border: 1px solid #ff0000;
     border-radius: 6px;
     overflow: hidden;
     flex-grow: 1;
@@ -102,8 +102,8 @@
 
 .skill-progress {
     height: 100%;
-    background: #39ff14;
-    box-shadow: 0 0 10px #39ff14;
+    background: #b80808;
+    box-shadow: 0 0 10px #ff3c00;
     animation: glow-pulse 2s ease-in-out infinite;
 }
 
