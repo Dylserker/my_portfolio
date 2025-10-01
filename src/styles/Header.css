@@ -17,16 +17,16 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 4rem;
+    gap: 2rem;
     width: 100%;
     max-width: 1400px;
-    padding: 0 4rem;
+    padding: 0 2rem;
     margin: 0 auto;
 }
 
 .title-gif {
-    height: 280px;
-    width: 280px;
+    height: 220px;
+    width: 220px;
     object-fit: contain;
     image-rendering: optimizeQuality;
     image-rendering: -webkit-crisp-edges;
@@ -44,7 +44,7 @@
     background: rgba(0, 0, 0, 0.8);
     padding: 3rem 2rem;
     border-bottom: 2px solid #39ff14;
-    margin-bottom: 80px;
+    margin-bottom: 48px;
 }
 
 .header-content {

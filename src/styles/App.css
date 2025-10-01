@@ -51,7 +51,7 @@ h1 {
 }
 
 #skills, #contact, #projects, #about {
-  max-width: 98%;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -59,10 +59,11 @@ h1 {
 
 section {
   padding: 2rem;
-  margin: 2rem 0;
+  margin: 2rem auto;
   border: 2px solid #ff00ff;
   background-color: rgba(0, 0, 0, 0.7);
   box-shadow: 0 0 15px rgba(255, 0, 255, 0.3);
+  width: calc(100% - 2rem);
 }
 
 h2 {
