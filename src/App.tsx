@@ -1,4 +1,5 @@
 import React from 'react';
+import ScrollToTopButton from './components/Tool/ScrollToTopButton';
 import PixelEffect from './components/Effect/PixelEffect';
 import './styles/App.css';
 import Header from './components/Header/Header';
@@ -33,6 +34,7 @@ function App() {
                     <Contact />
                 </section>
             </main>
+            <ScrollToTopButton />
             <Footer />
         </div>
     );
