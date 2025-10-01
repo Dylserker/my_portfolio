@@ -67,9 +67,9 @@ section {
 }
 
 h2 {
-  color: #00ffff;
+  color: #ff0000;
   margin-bottom: 1.5rem;
-  text-shadow: 0 0 8px #00ffff;
+  text-shadow: 0 0 8px #ff9900;
 }
 
 @keyframes glow {

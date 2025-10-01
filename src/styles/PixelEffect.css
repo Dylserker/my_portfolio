@@ -12,7 +12,7 @@
     position: absolute;
     width: 2px;
     height: 2px;
-    background: #39ff14;
+    background: #ff0000;
     animation: pixelFloat 3s linear infinite;
     opacity: 0;
 }
