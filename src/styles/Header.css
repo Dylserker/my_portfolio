@@ -36,6 +36,39 @@
     will-change: transform;
     animation: floatingGif 3s ease-in-out infinite;
 }
+.logo {
+    height: 56px;
+    width: 56px;
+    object-fit: contain;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    color: #39ff14;
+    text-decoration: none;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.9rem;
+    text-shadow: 0 0 8px rgba(57, 255, 20, 0.6);
+}
+
+.nav-links a:hover {
+    color: #00ffff;
+    text-shadow: 0 0 8px rgba(0, 255, 255, 0.6);
+}
 .header {
     display: flex;
     justify-content: center;
