@@ -1,6 +1,10 @@
 import React, { useRef } from 'react';
 import '../../styles/Projects.css';
-import reactIcon from '../../assets/images/React_Icon.png';
+import reactIcon from '../../assets/images/React_Icon.webp';
+import Dylserker from '../../assets/images/Dylserker_Logo.webp';
+import Carole from '../../assets/images/Carole.webp';
+import Focus from '../../assets/images/Focus_Carot.webp';
+import Eco from '../../assets/images/Ministere.webp';
 
 type Project = {
     id: number;
@@ -19,7 +23,7 @@ const Projects: React.FC = () => {
             title: 'Portfolio React',
             description: 'Portfolio personnel développé avec React et animations CSS avec un style jeux vidéo rétro.',
             tech: ['React', 'CSS3', 'JavaScript', 'Node.js', 'TypeScript'],
-            image: reactIcon,
+            image: Dylserker,
             github: 'https://github.com/Dylserker/my_portfolio',
             demo: '...'
         },
@@ -28,7 +32,7 @@ const Projects: React.FC = () => {
             title: 'Vitrine_Carole',
             description: "Site en ligne pour une assistante maternelle agréer sur Riom.",
             tech: ['React', 'Node.js'],
-            image: reactIcon,
+            image: Carole,
             github: 'https://github.com/Dylserker/Vitrine_Carole',
             demo: 'https://carole-levant.vercel.app/'
         },
@@ -46,7 +50,7 @@ const Projects: React.FC = () => {
             title: 'Focus_Carot',
             description: "Site pour aider les TDAH et TSA dans leur quotidien.",
             tech: ['React', 'Tailwind', 'JavaScript', 'TypeScript', 'Php', 'Vendor', 'MongoDB'],
-            image: reactIcon,
+            image: Focus,
             github: 'https://github.com/Dylserker/focus-carot-web',
             demo: '...'
         },
@@ -55,7 +59,7 @@ const Projects: React.FC = () => {
             title: 'Num_eco_eval',
             description: "Site pour le minièstre de la transition écologique.",
             tech: ['React', 'Tailwind', 'JavaScript', 'TypeScript', 'Nest.js'],
-            image: reactIcon,
+            image: Eco,
             github: 'https://github.com/Dylserker/numecoeval',
             demo: '...'
         }
