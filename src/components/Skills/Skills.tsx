@@ -22,7 +22,8 @@ const Skills: React.FC = () => {
                 { name: 'Node.js', level: 75 },
                 { name: 'MongoDB', level: 70 },
                 { name: 'Express', level: 70 },
-                { name: 'SQL', level: 65 }
+                { name: 'SQL', level: 65 },
+                { name: 'Php', level: 60 }
             ]
         },
         {
