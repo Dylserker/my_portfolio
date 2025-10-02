@@ -16,7 +16,7 @@
 .title-container {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
     gap: 2.5rem;
     width: 100%;
     max-width: 95vw;
@@ -102,6 +102,41 @@
     padding: 0.5rem 0;
 }
 
+/* Bouton hamburger */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 28px;
+    height: 22px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1;
+    color: #ff0000;
+}
+
+.hamburger span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background: #ff0000;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+/* Animation croix */
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(8px, -8px);
+}
+
 @keyframes floatingGif {
     0% { transform: translateY(0); }
     50% { transform: translateY(-10px); }
@@ -126,7 +161,7 @@
 /* Tablettes portrait */
 @media screen and (max-width: 768px) {
     .title-container {
-        justify-content: center;
+        justify-content: space-between;
         padding: 0 0.5rem;
         gap: 1.5rem;
     }
@@ -155,19 +190,35 @@
     }
     
     .nav-links {
-        gap: 2.5rem;
-        position: static;
-        transform: none;
-        flex-wrap: wrap;
-    }
+    flex-direction: column;
+    gap: 3rem;
+    padding: 30px;
+    margin-right: 90px;
+    list-style: none;
+    background-color: black;
+    border: #ff0000 2px solid;
+  }
     
     .nav-links a {
         font-size: 1rem;
     }
     
+    .hamburger {
+        display: flex;
+    }
+
     .nav {
-        flex-direction: column;
-        gap: 1.5rem;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(0,0,0,0.95);
+    width: 100%;
+    padding: 1.5rem 0;
+    z-index: 3;
+  }
+
+    .nav.open {
+        display: flex;
     }
 }
 

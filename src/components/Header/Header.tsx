@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../../styles/Header.css';
 import logo from '../../assets/images/Dylserker_Logo.webp';
 
@@ -7,12 +7,31 @@ type HeaderProps = {
 };
 
 const Header: React.FC<HeaderProps> = ({ className = '' }) => {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
+
     return (
         <header className={`header ${className}`}>
             <div className="header-content">
                 <div className="title-container">
-                <img src={logo} alt="Logo" className="logo" />
-                    <nav className="nav">
+                    <img src={logo} alt="Logo" className="logo" />
+
+                    {/* 👉 Bouton hamburger */}
+                    <button 
+                        className={`hamburger ${isMenuOpen ? 'active' : ''}`} 
+                        onClick={toggleMenu}
+                        aria-label="Toggle menu"
+                    >
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+
+                    {/* Menu de navigation */}
+                    <nav className={`nav ${isMenuOpen ? 'open' : ''}`}>
                         <ul className="nav-links">
                             <li><a href="#about">About</a></li>
                             <li><a href="#projects">Projects</a></li>
@@ -27,5 +46,3 @@ const Header: React.FC<HeaderProps> = ({ className = '' }) => {
 };
 
 export default Header;
-
-    
