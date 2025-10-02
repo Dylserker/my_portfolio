@@ -23,7 +23,7 @@ const Contact: React.FC = () => {
         setIsSubmitting(true);
 
         emailjs
-            .send('service_8ihlzfs', 'template_fyoqchp', formData, '_Mz0Df-MlYz-Xe8vV')
+            .send('service_nvrb1wm', 'template_fyoqchp', formData, '_Mz0Df-MlYz-Xe8vV')
             .then(() => {
                 setSubmitStatus('success');
                 setFormData({ name: '', email: '', message: '' });
