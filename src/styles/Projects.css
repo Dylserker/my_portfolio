@@ -125,6 +125,7 @@
     display: flex;
     gap: 1rem;
     margin-top: 1rem;
+    z-index: 1;
 }
 
 .project-links a {
