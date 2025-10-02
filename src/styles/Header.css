@@ -231,7 +231,7 @@
     .title-container {
         gap: 1rem;
         padding: 0;
-        flex-direction: column;
+        flex-direction: flex;
     }
 
     .title-gif {
