@@ -35,11 +35,14 @@
     transform: translateZ(0);
     will-change: transform;
     animation: floatingGif 3s ease-in-out infinite;
+    flex-shrink: 0;
 }
+
 .logo {
     height: 80px;
     width: 80px;
     object-fit: contain;
+    flex-shrink: 0;
 }
 
 .nav {
@@ -70,12 +73,14 @@
     font-family: 'Press Start 2P', cursive;
     font-size: 1.25rem;
     text-shadow: 0 0 8px rgba(57, 255, 20, 0.6);
+    transition: all 0.3s ease;
 }
 
 .nav-links a:hover {
     color: #ffae00;
     text-shadow: 0 0 8px rgb(255, 238, 0);
 }
+
 .header {
     display: flex;
     justify-content: center;
@@ -103,43 +108,137 @@
     100% { transform: translateY(0); }
 }
 
+/* Tablettes et petits écrans */
+@media screen and (max-width: 1024px) {
+    .nav-links {
+        gap: 4rem;
+    }
+    
+    .nav-links a {
+        font-size: 1.1rem;
+    }
+    
+    .title-container {
+        gap: 2rem;
+    }
+}
+
+/* Tablettes portrait */
 @media screen and (max-width: 768px) {
     .title-container {
         justify-content: center;
         padding: 0 0.5rem;
+        gap: 1.5rem;
     }
 
     .title-gif {
-        max-width: 200px;
-        max-height: 200px;
+        height: 160px;
+        width: 160px;
+    }
+    
+    .logo {
+        height: 60px;
+        width: 60px;
     }
 
     .App-header {
         padding: 2rem 1rem;
     }
+    
+    .App-header h1 {
+        font-size: 1.5rem;
+    }
 
     .header {
-        padding: 2rem 1rem;
-        margin-bottom: 40px;
+        padding: 1.5rem 1rem;
+        margin-bottom: 32px;
+    }
+    
+    .nav-links {
+        gap: 2.5rem;
+        position: static;
+        transform: none;
+        flex-wrap: wrap;
+    }
+    
+    .nav-links a {
+        font-size: 1rem;
+    }
+    
+    .nav {
+        flex-direction: column;
+        gap: 1.5rem;
     }
 }
 
+/* Smartphones */
 @media screen and (max-width: 480px) {
     .title-container {
-        gap: 0.5rem;
+        gap: 1rem;
         padding: 0;
+        flex-direction: column;
     }
 
     .title-gif {
-        max-width: 100px;
-        max-height: 100px;
+        height: 120px;
+        width: 120px;
+    }
+    
+    .logo {
+        height: 50px;
+        width: 50px;
     }
 
     .App-header h1 {
         font-size: 1rem;
+        line-height: 1.4;
+    }
+    
+    .App-header {
+        padding: 1.5rem 0.5rem;
     }
 
     .header {
-        margin-bottom: 20px;
+        padding: 1.5rem 0.5rem;
+        margin-bottom: 24px;
+    }
+    
+    .header-content {
+        padding: 0.25rem 0;
+    }
+    
+    .nav-links {
+        gap: 1.5rem;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .nav-links a {
+        font-size: 0.85rem;
+    }
+    
+    .nav {
+        gap: 1rem;
+    }
+}
+
+/* Très petits écrans */
+@media screen and (max-width: 360px) {
+    .title-gif {
+        height: 100px;
+        width: 100px;
+    }
+    
+    .logo {
+        height: 40px;
+        width: 40px;
+    }
+    
+    .App-header h1 {
+        font-size: 0.85rem;
+    }
+    
+    .nav-links a {
+        font-size: 0.75rem;
     }
 }
